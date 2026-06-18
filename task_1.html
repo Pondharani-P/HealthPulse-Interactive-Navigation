@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HealthPulse - Fitness & Healthcare Tracker</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f4f7f9;
+}
+
+/* NAVBAR */
+
+nav{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 40px;
+    background:transparent;
+    transition:all 0.4s ease;
+    z-index:1000;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:bold;
+    color:white;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+}
+
+.nav-links li{
+    margin-left:20px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:white;
+    font-size:18px;
+    padding:10px 15px;
+    border-radius:8px;
+    transition:all 0.3s ease;
+}
+
+.nav-links a:hover{
+    background:white;
+    color:#00b4d8;
+    transform:translateY(-3px);
+}
+
+/* SCROLL EFFECT */
+
+.scrolled{
+    background:linear-gradient(90deg,#00c9a7,#00b4d8,#0077b6);
+    box-shadow:0 4px 20px rgba(0,0,0,0.25);
+}
+
+/* HERO */
+
+.hero{
+    min-height:100vh;
+    background:linear-gradient(135deg,#26c6da,#00796b);
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px;
+}
+
+.hero h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:22px;
+    max-width:700px;
+    line-height:1.6;
+    margin-bottom:30px;
+}
+
+.hero img{
+    width:420px;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.3);
+}
+
+/* SECTIONS */
+
+section{
+    padding:80px 50px;
+}
+
+h2{
+    color:#00796b;
+    margin-bottom:20px;
+    font-size:32px;
+    text-align:center;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    margin-top:20px;
+    box-shadow:0 3px 12px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card img{
+    width:100%;
+    border-radius:12px;
+    margin-bottom:15px;
+    transition:0.4s;
+}
+
+.card img:hover{
+    transform:scale(1.03);
+}
+
+.card p{
+    font-size:18px;
+    line-height:1.8;
+}
+
+/* DASHBOARD */
+
+.dashboard{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.dashboard-card{
+    background:white;
+    width:250px;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 3px 12px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.dashboard-card:hover{
+    transform:translateY(-5px);
+}
+
+.dashboard-card h3{
+    color:#0077b6;
+    margin-bottom:10px;
+}
+
+/* FOOTER */
+
+.footer{
+    background:#00796b;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav id="navbar">
+
+<div class="logo">HealthPulse</div>
+
+<ul class="nav-links">
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#fitness">Fitness</a></li>
+<li><a href="#weather">Weather</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+<!-- HOME -->
+
+<section class="hero" id="home">
+
+<h1>HealthPulse</h1>
+
+<p>
+Track your fitness, monitor your health,
+and stay motivated every day with HealthPulse –
+your personal fitness and healthcare companion.
+</p>
+
+<img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800"
+alt="Fitness">
+
+</section>
+
+<!-- DASHBOARD -->
+
+<section>
+
+<h2>Health Dashboard</h2>
+
+<div class="dashboard">
+
+<div class="dashboard-card">
+<h3>🏃 Fitness Goals</h3>
+<p>Track daily workout progress.</p>
+</div>
+
+<div class="dashboard-card">
+<h3>💧 Water Intake</h3>
+<p>Maintain proper hydration.</p>
+</div>
+
+<div class="dashboard-card">
+<h3>❤️ Heart Health</h3>
+<p>Monitor healthy lifestyle habits.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<h2>About HealthPulse</h2>
+
+<div class="card">
+
+<p>
+HealthPulse is a Fitness and Healthcare Tracker designed
+to help users maintain a healthy lifestyle, monitor fitness activities,
+and access health-related information in one place.
+</p>
+
+</div>
+
+</section>
+
+<!-- FITNESS -->
+
+<section id="fitness">
+
+<h2>Fitness Tracker</h2>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800"
+alt="Workout">
+
+<p>
+Track workout sessions, walking duration,
+yoga practice, exercise routines and fitness goals
+to stay active and healthy.
+</p>
+
+</div>
+
+</section>
+
+<!-- WEATHER -->
+
+<section id="weather">
+
+<h2>Health Weather Monitor</h2>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?w=800"
+alt="Weather">
+
+<p>
+Stay informed about current weather conditions and receive
+health recommendations before outdoor activities such as
+walking, jogging, cycling, or exercising.
+</p>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<h2>Contact</h2>
+
+<div class="card">
+
+<p>Email: pondharaniperiyasamy@gmail.com</p>
+
+
+
+</div>
+
+</section>
+
+<div class="footer">
+
+<p>HealthPulse | Fitness & Healthcare Tracker</p>
+
+</div>
+
+<script>
+
+const navbar = document.getElementById("navbar");
+
+window.addEventListener("scroll", function(){
+
+    if(window.scrollY > 50){
+        navbar.classList.add("scrolled");
+    }
+    else{
+        navbar.classList.remove("scrolled");
+    }
+
+});
+
+</script>
+
+</body>
+</html>
